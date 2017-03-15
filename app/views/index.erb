@@ -1,6 +1,6 @@
 <h1>My Robots</h1>
 
 <% @robots.each do |robot| %>
-  <h3><%= robot.name %></h3>
+  <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
   <p><%= robot.city %>, <%= robot.state %> <br> <%= robot.department %></p>
 <% end %>
