@@ -1,0 +1,9 @@
+<form action="/robots/<%= @robot.id %>" method="post">
+  <p>Edit Your Robot</p>
+  <input type="hidden" name="_method" value="PUT">
+  Name: <input type='text' name='robot[name]' value="<%= @robot.name %>"/><br/>
+  City: <input type='text' name='robot[city]' value="<%= @robot.city %>"/><br/>
+  State: <input type='text' name='robot[state]' value="<%= @robot.state %>"/><br/>
+  Department: <input type='text' name='robot[department]' value="<%= @robot.department %>"/><br/>
+  <input type='submit'/>
+</form>
